@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <link rel="icon" href="imagesico/pngwing.com (16).png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo de video -->
+    <video autoplay muted loop id="videoBackground">
+        <source src="videos/fondoromantico.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="container">
+        <!-- Primera pantalla -->
+        <div id="introScreen">
+            <h1>De: Cesar Leo Huisa <br> Para: Ruth Salguero</h1>
+            <button id="btnContinuar">Continuar</button>
+        </div>
+
+        <!-- Segunda pantalla -->
+        <div id="mainScreen" style="display: none;">
+            <h1>¿Quieres ser mi San Valentín?</h1>
+            <div class="gif-container">
+                <img id="gif" src="https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif" alt="GIF de San Valentín" class="gif">
+            </div>
+            <div class="buttons">
+                <button id="btnSi">Sí</button>
+                <button id="btnNo">No</button>
+            </div>
+            <p id="mensaje"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Fondo de video */
+#videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Títulos */
+h1 {
+    color: #d32f2f;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de GIFs */
+.gif-container {
+    margin: 20px 0;
+}
+
+.gif {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    animation: moveGif 2s infinite;
+}
+
+@keyframes moveGif {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Botones */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+#btnSi {
+    background-color: #4caf50;
+    color: white;
+}
+
+#btnSi:hover {
+    background-color: #388e3c;
+}
+
+#btnNo {
+    background-color: #f44336;
+    color: white;
+}
+
+#btnNo:hover {
+    background-color: #d32f2f;
+}
+
+/* Mensaje */
+#mensaje {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d32f2f;
+}
+
+/* Botón Continuar */
+#btnContinuar {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnContinuar:hover {
+    background-color: #ff3b2f;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .gif {
+        max-width: 150px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    #btnContinuar {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
